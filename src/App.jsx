@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import TemplatesPage from "./TemplatesPage";
+import HomePage from "./components/Landing/HomePage";
+import TemplatesPage from "./components/Templates/TemplatesPage";
 
 function App() {
   return (

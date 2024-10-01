@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const HomePage = () => {
+function HomePage() {
   const navigate = useNavigate();
 
   const viewTemplates = () => {
@@ -24,6 +24,6 @@ const HomePage = () => {
       <button onClick={viewTemplates}>Getting Started</button>
     </div>
   );
-};
+}
 
 export default HomePage;

@@ -1,15 +1,14 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
-import TemplatesPage from "./pages/Templates/TemplatesPage";
-import ResumePage from "./pages/Build/ResumePage";
+import Template from "./pages/Build/Template";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/templates" element={<TemplatesPage />} />
-        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/template" element={<Template />} />
       </Routes>
     </Router>
   );

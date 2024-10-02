@@ -1,28 +1,21 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../../components/Header";
 
 function HomePage() {
   const navigate = useNavigate();
 
-  const viewTemplates = () => {
-    navigate("/templates");
+  const buildResume = () => {
+    navigate("/template");
   };
 
   return (
-    <div>
-      <header>
-        <nav>
-          <ul>
-            <li>Logo</li>
-            <li>Home</li>
-            <li>
-              <button onClick={viewTemplates}>Templates</button>
-            </li>
-            <li>Features</li>
-          </ul>
-        </nav>
-      </header>
-      <button onClick={viewTemplates}>Getting Started</button>
-    </div>
+    <>
+      <div className="flex flex-col">
+        <Header />
+        <button onClick={buildResume}>Getting Started</button>
+      </div>
+    </>
   );
 }
 

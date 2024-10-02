@@ -1,7 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import Features from "../../components/Features";
 
 function HomePage() {
   return (
@@ -14,7 +14,9 @@ function HomePage() {
           </section>
         </div>
       </div>
-      <section id="feature-section">sdsd</section>
+      <section id="feature-section">
+        <Features />
+      </section>
       <section id="template-section">sds</section>
     </>
   );

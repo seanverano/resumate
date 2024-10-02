@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function TemplatePage() {
+function BuildPage() {
   return <div>wip</div>;
 }
 
-export default TemplatePage;
+export default BuildPage;

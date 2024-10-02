@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Template() {
+function TemplatePage() {
   return <div>wip</div>;
 }
 
-export default Template;
+export default TemplatePage;

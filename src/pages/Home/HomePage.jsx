@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import Features from "../../components/Features";
+import Templates from "../../components/Templates";
 
 function HomePage() {
   return (
@@ -17,7 +18,9 @@ function HomePage() {
       <section id="feature-section">
         <Features />
       </section>
-      <section id="template-section">sds</section>
+      <section id="template-section">
+        <Templates />
+      </section>
     </>
   );
 }

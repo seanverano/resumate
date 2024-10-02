@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/template" element={<TemplatePage />} />
+        <Route path="/build-resume" element={<TemplatePage />} />
         <Route path="/attribution" element={<Attribution />} />
       </Routes>
     </Router>

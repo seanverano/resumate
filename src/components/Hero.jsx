@@ -6,7 +6,7 @@ import HeroImage from "../assets/hero-img.jpg";
 const Hero = () => {
   const navigate = useNavigate();
 
-  const buildResume = () => navigate("/template");
+  const buildResume = () => navigate("/build-resume");
   return (
     <section className="flex items-center justify-between h-screen max-w-screen-lg mx-auto p-8">
       <div className="flex-1">

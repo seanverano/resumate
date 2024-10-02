@@ -5,7 +5,7 @@ import Logo from "../assets/logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
-  const buildResume = () => navigate("/template");
+  const buildResume = () => navigate("/build-resume");
 
   return (
     <header className="fixed top-4 z-50 w-full">

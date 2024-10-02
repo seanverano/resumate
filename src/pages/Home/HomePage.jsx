@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import Features from "../../components/Features";
 import Templates from "../../components/Templates";
+import Footer from "../../components/Footer";
 
 function HomePage() {
   return (
@@ -21,6 +22,9 @@ function HomePage() {
       <section id="template-section">
         <Templates />
       </section>
+      <div>
+        <Footer />
+      </div>
     </>
   );
 }

@@ -15,7 +15,7 @@ const Templates = () => {
       image: "https://via.placeholder.com/200x300",
     },
     {
-      title: "Tres",
+      title: "Tres (Coming Soon)",
       description:
         "This is currently in development—stay tuned for its launch!",
       image: "https://via.placeholder.com/200x300",

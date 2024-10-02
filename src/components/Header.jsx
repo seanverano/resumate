@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-4 z-50 w-full">
-      <nav className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg saturate-180 rounded-full shadow-lg mx-auto w-4/5">
+      <nav className="bg-[#ECEEEE] bg-opacity-20 backdrop-filter backdrop-blur-lg saturate-180 rounded-full shadow-lg mx-auto w-[90%]">
         {" "}
         <div className="flex items-center justify-between px-6 py-2">
           <div className="flex items-center">

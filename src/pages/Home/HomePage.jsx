@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
+import Hero from "../../components/Hero";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -11,9 +12,12 @@ function HomePage() {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-[#FFFFFF]">
         <Header />
-        <button onClick={buildResume}>Getting Started</button>
+        <div>
+          <Hero />
+          <button onClick={buildResume}>Getting Started</button>
+        </div>
       </div>
       <section>sdsd</section>
       <section>sds</section>

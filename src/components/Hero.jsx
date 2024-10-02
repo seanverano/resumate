@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import HeroImage from "../assets/hero-img.jpg";
 
 const Hero = () => {
   const navigate = useNavigate();
 
   const buildResume = () => navigate("/template");
-  const viewFeatures = () => navigate("#feature-section");
   return (
     <section className="flex items-center justify-between h-screen max-w-screen-lg mx-auto p-8">
       <div className="flex-1">
@@ -30,12 +30,15 @@ const Hero = () => {
           >
             Get Started
           </button>
-          <button
-            onClick={viewFeatures}
-            className="text-sm font-jakarta font-bold text-[#323232] bg-[#ECEEEE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300 ml-2"
+          <HashLink
+            to="#feature-section"
+            className="text-sm font-jakarta font-bold
+            text-[#323232] bg-[#ECEEEE] rounded-lg px-4 py-2
+            hover:bg-transparent hover:text-[#7175FE] transition duration-300
+            ml-2"
           >
             Learn More
-          </button>
+          </HashLink>
         </div>
       </div>
 

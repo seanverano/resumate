@@ -28,9 +28,12 @@ const Templates = () => {
         <h2 className="font-jakarta text-[#7175FE] text-3xl font-bold text-center mb-8">
           Templates Designed to Elevate Your Resume
         </h2>
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-stretch">
           {templates.map((template, index) => (
-            <div key={index} className="flex-1 md:mx-4 mb-8 md:mb-0">
+            <div
+              key={index}
+              className="flex-1 md:mx-4 mb-8 md:mb-0 flex flex-col"
+            >
               <img
                 src={template.image}
                 alt={template.title}
@@ -39,7 +42,7 @@ const Templates = () => {
               <h3 className="font-jakarta text-xl text-[#323232] font-semibold mb-2 text-center">
                 {template.title}
               </h3>
-              <p className="font-noto text-[#323232] text-center">
+              <p className="font-noto text-[#323232] text-center flex-grow">
                 {template.description}
               </p>
             </div>

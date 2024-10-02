@@ -1,13 +1,10 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Logo from "../assets/logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
-
-  const goHome = () => navigate("/");
-  const viewFeatures = () => navigate("#feature-section");
-  const viewTemplates = () => navigate("#template-section");
   const buildResume = () => navigate("/template");
 
   return (
@@ -21,31 +18,30 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Navbar in HomePage */}
           <ul className="flex flex-row items-center list-none ml-auto">
             <li className="mx-2">
-              <button
-                onClick={goHome}
-                className="text-sm font-jakarta text-[#323232]"
+              <HashLink
+                to="#home-section"
+                className="text-sm font-jakarta text-[#323232] cursor-pointer"
               >
                 Home
-              </button>
+              </HashLink>
             </li>
             <li className="mx-2">
-              <button
-                onClick={viewFeatures}
-                className="text-sm font-jakarta text-[#323232]"
+              <HashLink
+                to="#feature-section"
+                className="text-sm font-jakarta text-[#323232] cursor-pointer"
               >
                 Features
-              </button>
+              </HashLink>
             </li>
             <li className="mx-2">
-              <button
-                onClick={viewTemplates}
-                className="text-sm font-jakarta text-[#323232]"
+              <HashLink
+                to="#template-section"
+                className="text-sm font-jakarta text-[#323232] cursor-pointer"
               >
                 Templates
-              </button>
+              </HashLink>
             </li>
             <li className="mx-2">
               <button

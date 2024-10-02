@@ -4,23 +4,18 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 
 function HomePage() {
-  const navigate = useNavigate();
-
-  const buildResume = () => {
-    navigate("/template");
-  };
-
   return (
     <>
       <div className="flex flex-col bg-[#FFFFFF]">
         <Header />
         <div>
-          <Hero />
-          <button onClick={buildResume}>Getting Started</button>
+          <section id="home-section">
+            <Hero />
+          </section>
         </div>
       </div>
-      <section>sdsd</section>
-      <section>sds</section>
+      <section id="feature-section">sdsd</section>
+      <section id="template-section">sds</section>
     </>
   );
 }

@@ -15,6 +15,8 @@ function HomePage() {
         <Header />
         <button onClick={buildResume}>Getting Started</button>
       </div>
+      <section>sdsd</section>
+      <section>sds</section>
     </>
   );
 }

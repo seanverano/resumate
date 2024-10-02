@@ -1,46 +1,65 @@
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
-function Header() {
+const Header = () => {
   const navigate = useNavigate();
 
-  const goHome = () => {
-    navigate("/");
-  };
+  const goHome = () => navigate("/");
+  const viewFeatures = () => navigate("#feature-section");
+  const viewTemplates = () => navigate("#template-section");
+  const buildResume = () => navigate("/template");
 
-  const viewFeatures = () => {
-    navigate("#features-section");
-  };
-
-  const viewTemplates = () => {
-    navigate("#templates-section");
-  };
   return (
-    <header className="fixed top-0 left-0 right-0 mt-4 mb-4 mx-auto bg-white/30 backdrop-blur-md shadow-md rounded-lg z-50">
-      <nav className="max-w-7xl mx-auto p-4">
-        <ul className="flex flex-row items-center list-none">
-          <li className="mr-4">
-            <img src={Logo} alt="Resumate Logo" className="w-24" />
-          </li>
-          <li className="mr-4">
-            <button onClick={goHome} className="">
-              Home
-            </button>
-          </li>
-          <li className="mr-4">
-            <button onClick={viewFeatures} className="">
-              Features
-            </button>
-          </li>
-          <li className="mr-4">
-            <button onClick={viewTemplates} className="">
-              Templates
-            </button>
-          </li>
-        </ul>
+    <header className="fixed top-4 z-50 w-full">
+      <nav className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg saturate-180 rounded-full shadow-lg mx-auto w-4/5">
+        {" "}
+        <div className="flex items-center justify-between px-6 py-2">
+          <div className="flex items-center">
+            <Link to="/">
+              <img src={Logo} alt="Resumate Logo" className="w-20 h-auto" />
+            </Link>
+          </div>
+
+          {/* Navbar in HomePage */}
+          <ul className="flex flex-row items-center list-none ml-auto">
+            <li className="mx-2">
+              <button
+                onClick={goHome}
+                className="text-sm font-jakarta text-[#323232]"
+              >
+                Home
+              </button>
+            </li>
+            <li className="mx-2">
+              <button
+                onClick={viewFeatures}
+                className="text-sm font-jakarta text-[#323232]"
+              >
+                Features
+              </button>
+            </li>
+            <li className="mx-2">
+              <button
+                onClick={viewTemplates}
+                className="text-sm font-jakarta text-[#323232]"
+              >
+                Templates
+              </button>
+            </li>
+            <li className="mx-2">
+              <button
+                onClick={buildResume}
+                className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300"
+              >
+                Get Started
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

@@ -9,7 +9,13 @@ function Attribution() {
       <section className="font-jakarta bg-[#7175FE] flex flex-col items-center justify-center min-h-screen">
         <div className="text-sm text-center">
           <p className="text-[#FFFFFF] mb-2">
-            <a href="https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm?query=writing document">
+            <a href="https://logo.com/">
+              Logo and Favicon by Sean Dustin Verano
+            </a>{" "}
+            on LOGO.com
+          </p>
+          <p className="text-[#FFFFFF] mb-2">
+            <a href="https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm">
               Hero Image by pch.vector
             </a>{" "}
             on Freepik

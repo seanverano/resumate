@@ -10,19 +10,19 @@ const Hero = () => {
   return (
     <section className="flex items-center justify-between h-screen max-w-screen-lg mx-auto p-8">
       <div className="flex-1">
-        <h1 className="text-center font-jakarta text-6xl font-bold mb-4">
+        <h1 className="text-center font-jakarta text-7xl font-bold mb-4">
           <span className="text-[#323232]">Résu</span>
           <span className="text-[#7175FE]">mate</span>
         </h1>
-        <h2 className="text-center mx-2 font-noto italic text-[#323232] mb-4">
+        <h2 className="text-center mx-2 font-noto text-[#323232] mb-4">
+          Your journey to a standout resume starts here.
+        </h2>
+        <h2 className="text-center mx-2 font-noto italic text-[#8D9099] mb-4">
           "Success is where preparation meets opportunity"
         </h2>
-        <h2 className="text-center font-noto italic text-[#323232] mb-4">
+        <h2 className="text-center font-noto italic text-[#8D9099] mb-4">
           — Zig Ziglar
         </h2>
-        <p className="text-center font-noto font-bold text-[#323232] mb-4">
-          Optimized for desktop, laptop, and tablet use
-        </p>
         <div className="flex justify-center">
           <button
             onClick={buildResume}

@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/Header";
-import Hero from "../../components/Hero";
-import Features from "../../components/Features";
-import Templates from "../../components/Templates";
-import Footer from "../../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Templates from "../components/Templates";
+import Footer from "../components/Footer";
 
 function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home/HomePage";
-import BuildPage from "./pages/Build/BuildPage";
+import HomePage from "./pages/HomePage";
+import BuildPage from "./pages/BuildPage";
 import Attribution from "./components/Attribution";
 
 function App() {

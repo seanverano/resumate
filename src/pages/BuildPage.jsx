@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 function BuildPage() {
-  return <div>wip</div>;
+  return;
+  <>
+    <Unus />
+  </>;
 }
 
 export default BuildPage;

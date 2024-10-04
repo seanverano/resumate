@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Attribution() {
+function AttributionPage() {
   const navigate = useNavigate();
   const goHome = () => navigate("/");
   return (
@@ -64,4 +64,4 @@ function Attribution() {
   );
 }
 
-export default Attribution;
+export default AttributionPage;

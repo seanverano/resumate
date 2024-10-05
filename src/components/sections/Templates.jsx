@@ -6,19 +6,13 @@ const Templates = () => {
       title: "Unus",
       description:
         "A sleek, minimalist design inspired by Harvard's popular resume template.",
-      image: "https://via.placeholder.com/200x300",
+      image: "https://via.placeholder.com/150x200",
     },
     {
       title: "Duo",
       description:
         "Two-column layout with contact info and skills on the left for a clean, organized look.",
-      image: "https://via.placeholder.com/200x300",
-    },
-    {
-      title: "Tres (Coming Soon)",
-      description:
-        "This is currently in development—stay tuned for its launch!",
-      image: "https://via.placeholder.com/200x300",
+      image: "https://via.placeholder.com/150x200",
     },
   ];
 

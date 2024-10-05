@@ -1,10 +1,11 @@
 import React from "react";
 
+//FIRST TEMPLATE: UNUS
 const Unus = ({
   headerColor,
   headerTextColor,
   profile,
-  empCount,
+  expCount,
   experience,
   projectCount,
   project,
@@ -21,89 +22,35 @@ const Unus = ({
         backgroundColor: "#fff",
         boxShadow: "0 3px 8px -3px rgba(0, 0, 0, 0.7)",
       }}
+      className="font-timesnewroman"
     >
       <header
         style={{
           backgroundColor: `${headerColor}`,
           color: `${headerTextColor}`,
         }}
-        className="flex justify-between items-center font-sans w-full h-1/6"
+        className="flex flex-col justify-between items-center w-full h-1/6"
       >
-        <div className="flex flex-col px-5">
-          <div className="text-3xl">{profile.name}</div>
+        <div className="flex flex-col justify-center text-center font-bold px-5">
+          <div className="text-4xl mt-8">{profile.name}</div>
           <div className="text-lg pt-3">{profile.wantedJobTitle}</div>
         </div>
-        <div className="flex flex-col px-5">
-          <div className="text-md">
-            <svg
-              className="w-5 inline-block"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>{" "}
-            {profile.phone}
-          </div>
-          <div className="text-md pt-3">
-            <svg
-              className="w-5 inline-block"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>{" "}
-            {profile.email}
-          </div>
-          <div className="text-md pt-3">
-            <svg
-              className="w-5 inline-block"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1}
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>{" "}
-            {profile.address}
-          </div>
+        <div className="flex flex-row px-5">
+          <div className="text-md">{profile.phone}</div>
+          {profile.email && <span className="mx-2">|</span>}
+          <div className="text-md">{profile.email}</div>
+          {profile.address && <span className="mx-2">|</span>}
+          <div className="text-md">{profile.address}</div>
+        </div>
+        <div className="flex flex-row px-5">
+          <div className="text-md">{profile.linkOne}</div>
+          {profile.linkTwo && <span className="mx-2">|</span>}
+          <div className="text-md">{profile.linkTwo}</div>
+          {profile.linkThree && <span className="mx-2">|</span>}
+          <div className="text-md">{profile.linkThree}</div>
         </div>
       </header>
-      <section className="flex flex-col font-sans text-white w-full mb-5 px-5">
-        <div className="text-md text-gray-dark pt-3 border-b border-gray-dark tracking-widest">
-          SUMMARY
-        </div>
-        {!profile.summary || profile.summary.length === 0 ? (
-          ""
-        ) : (
-          <div className="text-sm pt-3 text-black">{profile.summary}</div>
-        )}
-      </section>
-      <section className="flex flex-col font-sans text-white w-full mb-5 px-5">
+      <section className="flex flex-col font-bold w-full mb-5 px-5">
         <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
           SKILLS
         </div>
@@ -112,7 +59,7 @@ const Unus = ({
             ? ""
             : profile.skills.split(",").map((skill) => (
                 <div
-                  className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm text-white"
+                  className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm"
                   key={skill}
                 >
                   {skill}
@@ -120,12 +67,12 @@ const Unus = ({
               ))}
         </div>
       </section>
-      <section className="flex flex-col font-sans text-white w-full mb-5 px-5">
+      <section className="flex flex-col font-bold w-full mb-5 px-5">
         <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
           EXPERIENCE
         </div>
-        {[...Array(empCount)].map((e, i) => (
-          <div className="flex flex-col" key={`emp${i}`}>
+        {[...Array(expCount)].map((e, i) => (
+          <div className="flex flex-col" key={`exp${i}`}>
             <div className="flex justify-between">
               <div className="text-sm pt-3 text-gray-dark">
                 <li>{experience.jobTitles[`jobTitle${i + 1}`]}</li>
@@ -142,7 +89,7 @@ const Unus = ({
               </div>
             </div>
             <div className="text-sm pt-3 text-gray-dark">
-              {experience.emp[`emp${i + 1}`]}
+              {experience.exp[`exp${i + 1}`]}
             </div>
             <div className="text-sm pt-3 text-gray-dark">
               {experience.jobDesc[`jobDesc${i + 1}`]}
@@ -150,12 +97,12 @@ const Unus = ({
           </div>
         ))}
       </section>
-      <section className="flex flex-col font-sans text-white w-full mb-5 px-5">
+      <section className="flex flex-col font-bold w-full mb-5 px-5">
         <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
           PROJECTS
         </div>
         {[...Array(projectCount)].map((e, i) => (
-          <div className="flex flex-col" key={`emp${i}`}>
+          <div className="flex flex-col" key={`exp${i}`}>
             <div className="flex justify-between">
               <div className="text-sm pt-3 text-gray-dark">
                 <li>{project.projectTitles[`projectTitle${i + 1}`]}</li>
@@ -178,12 +125,12 @@ const Unus = ({
           </div>
         ))}
       </section>
-      <section className="flex flex-col font-sans text-white w-full mb-5 px-5">
+      <section className="flex flex-col font-bold w-full mb-5 px-5">
         <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
           EDUCATION
         </div>
         {[...Array(eduCount)].map((e, i) => (
-          <div className="flex flex-col" key={`emp${i}`}>
+          <div className="flex flex-col" key={`exp${i}`}>
             <div className="flex justify-between">
               <div className="text-sm pt-3 text-gray-dark">
                 <li>{education.qual[`qual${i + 1}`]}</li>

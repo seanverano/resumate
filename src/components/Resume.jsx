@@ -1,11 +1,13 @@
 import React from "react";
-import Unus from "./templates/Unus.jsx";
+import Unus from "./templates/Unus";
 
+// Resume (on the right side of the build page)
+//Live previews the data inputted in the form (left side)
 const Resume = ({
   type,
   userData,
-  empData,
-  empCount,
+  expData,
+  expCount,
   eduData,
   eduCount,
   projectData,
@@ -15,11 +17,12 @@ const Resume = ({
 }) => {
   return (
     <>
-      {type === "Unus" ? (
+      {/* FIRST TEMPLATE: Unus */}
+      {type === "unus" ? (
         <Unus
           profile={userData}
-          experience={empData}
-          empCount={empCount}
+          experience={expData}
+          expCount={expCount}
           education={eduData}
           eduCount={eduCount}
           project={projectData}

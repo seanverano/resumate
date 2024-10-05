@@ -18,7 +18,21 @@ function Footer() {
           onClick={viewAttribution}
           className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300 w-auto"
         >
-          ATTRIBUTION ⬈
+          ATTRIBUTION{" "}
+          <svg
+            className="w-5 inline-block"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M7 17l10-10m-10 0h10v10"
+            />
+          </svg>
         </button>
       </div>
     </>

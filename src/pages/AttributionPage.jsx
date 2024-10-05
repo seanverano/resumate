@@ -10,7 +10,7 @@ function AttributionPage() {
         <div className="text-sm text-center">
           <p className="text-[#FFFFFF] mb-2">
             <a href="https://logo.com/">
-              Logo and Favicon by Sean Dustin Verano
+              Logo and Favicon created by Sean Dustin Verano
             </a>{" "}
             on LOGO.com
           </p>
@@ -41,7 +41,7 @@ function AttributionPage() {
               Feature 3 Icon created by kliwir art - Flaticon
             </a>
           </p>
-          <p className="text-[#FFFFFF] mb-6">
+          <p className="text-[#FFFFFF] mb-2">
             <a
               href="https://www.flaticon.com/free-icons/due-date"
               title="due date icons"
@@ -49,15 +49,34 @@ function AttributionPage() {
               Feature 4 Icon created by Moudesain - Flaticon
             </a>
           </p>
+          <p className="text-[#FFFFFF] mb-6">
+            <a href="http://www.w3.org/2000/svg" title="due date icons">
+              Phone, Email, Location, Arrows, and Download symbols from W3C
+            </a>
+          </p>
         </div>
         <button
           onClick={goHome}
           className="text-base font-jakarta font-bold
-            text-[#323232] bg-[#ECEEEE] rounded-lg px-6 py-3
+            text-[#323232] bg-[#FFFFFF] rounded-lg px-4 py-2
             hover:bg-transparent hover:text-[#ffffff] transition duration-300
             ml-2"
         >
-          ← Home
+          <svg
+            className="w-5 inline-block"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M11 17l-5-5m0 0l5-5m-5 5h12"
+            />
+          </svg>{" "}
+          Home
         </button>
       </section>
     </>

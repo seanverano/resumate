@@ -1,16 +1,16 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import HeroImage from "../assets/hero-img.jpg";
+import HeroImage from "../../assets/hero-img.jpg";
 
 const Hero = () => {
   const navigate = useNavigate();
 
   const buildResume = () => navigate("/build-resume");
   return (
-    <section className="flex items-center justify-between h-screen max-w-screen-lg mx-auto p-8">
+    <section className="flex items-center justify-between h-screen max-w-screen-lg mx-auto p-8 mt-4">
       <div className="flex-1">
-        <h1 className="text-center font-jakarta text-7xl font-bold mb-4">
+        <h1 className="text-center font-jakarta text-6xl font-bold mb-2">
           <span className="text-[#323232]">Résu</span>
           <span className="text-[#7175FE]">mate</span>
         </h1>

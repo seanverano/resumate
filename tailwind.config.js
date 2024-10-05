@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         noto: ["Noto Sans", "sans-serif"],
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
+        timesnewroman: ['"Times New Roman"', "serif"],
       },
     },
   },

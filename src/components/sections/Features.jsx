@@ -2,7 +2,7 @@ import React from "react";
 import FeatImgOne from "../../assets/feature-one.png";
 import FeatImgTwo from "../../assets/feature-two.png";
 import FeatImgThree from "../../assets/feature-three.png";
-import FeatImgFour from "../../assets/feature-four.png";
+import FeatImgFour from "../../assets/coming-soon.png";
 
 const Features = () => {
   const features = [

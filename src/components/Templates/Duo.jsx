@@ -114,6 +114,30 @@ const Duo = ({
               </svg>{" "}
               {profile.location}
             </div>
+            <div className="text-sm pt-3 break-all">
+              <svg
+                className="w-5 inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1}
+                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1}
+                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                />
+              </svg>{" "}
+              {profile.linkOne} <div className="ml-6"> {profile.linkTwo}</div>
+              <div className="ml-6"> {profile.linkThree}</div>
+            </div>
           </div>
         </div>
         <div className="w-3/4">

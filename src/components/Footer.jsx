@@ -18,7 +18,7 @@ function Footer() {
         </p>
         <button
           onClick={viewAttribution}
-          className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300 w-auto"
+          className="text-lg font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300 w-auto"
         >
           ATTRIBUTION{" "}
           <svg

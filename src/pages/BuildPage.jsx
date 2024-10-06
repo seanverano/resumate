@@ -303,56 +303,6 @@ function BuildPage() {
     <div className="w-screen h-full bg-gray-light text-gray-dark font-sans bg-[#E1C6ED]">
       <div className="flex p-3 print:p-0">
         <form className="w-2/5 flex flex-col justify-evenly print:hidden bg-[#E1C6ED]">
-          <div className="flex flex-row items-center justify-center gap-4">
-            <button
-              onClick={goHome}
-              className="text-base font-jakarta font-bold
-            text-[#323232] bg-[#FFFFFF] rounded-lg px-4 py-2
-            hover:bg-transparent hover:text-[#8424BC] transition duration-300
-            ml-2"
-            >
-              <svg
-                className="w-5 inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M11 17l-5-5m0 0l5-5m-5 5h12"
-                />
-              </svg>{" "}
-              Home
-            </button>
-            <PDFDownloader>
-              {({ downloadPDF, isDownloading, error }) => (
-                <button
-                  onClick={downloadPDF}
-                  disabled={isDownloading}
-                  className="text-base font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300"
-                >
-                  <svg
-                    className="w-5 inline-block"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>{" "}
-                  {isDownloading ? "Downloading..." : "Download PDF"}
-                </button>
-              )}
-            </PDFDownloader>
-          </div>
           <TemplateSelect handleChange={handleChange} type={type} />
           <div className="w-4/5">
             <label
@@ -412,6 +362,56 @@ function BuildPage() {
             headerColor={headerColor}
             headerTextColor={headerTextColor}
           />
+          <div className="flex flex-row items-center justify-center gap-4 mt-5">
+            <button
+              onClick={goHome}
+              className="text-lg font-jakarta font-bold
+            text-[#323232] bg-[#FFFFFF] rounded-lg px-4 py-2
+            hover:bg-transparent hover:text-[#8424BC] transition duration-300
+            ml-2"
+            >
+              <svg
+                className="w-5 inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M11 17l-5-5m0 0l5-5m-5 5h12"
+                />
+              </svg>{" "}
+              Home
+            </button>
+            <PDFDownloader>
+              {({ downloadPDF, isDownloading, error }) => (
+                <button
+                  onClick={downloadPDF}
+                  disabled={isDownloading}
+                  className="text-lg font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300"
+                >
+                  <svg
+                    className="w-5 inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>{" "}
+                  {isDownloading ? "Downloading..." : "Download PDF"}
+                </button>
+              )}
+            </PDFDownloader>
+          </div>
         </div>
       </div>
     </div>

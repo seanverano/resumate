@@ -17,8 +17,8 @@ function AttributionPage() {
             on LOGO.com
           </p>
           <p className="text-[#FFFFFF] mb-2">
-            <a href="https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm">
-              Hero Image by pch.vector
+            <a href="https://www.https://www.freepik.com/free-vector/customer-support-flat-illustration_13107135.htm#from_view=detail_alsolike">
+              Hero Image by freepik
             </a>{" "}
             on Freepik
           </p>

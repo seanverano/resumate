@@ -33,14 +33,14 @@ const Features = () => {
   return (
     <section className="py-16 bg-[#ffffff]">
       <div className="container mx-auto px-4">
-        <h2 className="font-jakarta text-[#7175FE] text-3xl font-bold text-center mb-8">
+        <h2 className="font-jakarta text-[#8424BC] text-3xl font-bold text-center mb-8">
           Features Built to Land Your Dream Job
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#EBF5FF] p-6 rounded-md transition-transform transform hover:scale-105 flex flex-col items-center"
+              className="bg-[#ECEEEE] hover:bg-[#E1C6ED] p-6 rounded-md flex flex-col items-center"
             >
               <img
                 src={feature.image}

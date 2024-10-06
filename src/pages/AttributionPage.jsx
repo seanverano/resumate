@@ -8,8 +8,8 @@ function AttributionPage() {
   const goHome = () => navigate("/");
   return (
     <>
-      <section className="font-jakarta bg-[#7175FE] flex flex-col items-center justify-center min-h-screen">
-        <div className="text-sm text-center">
+      <section className="font-jakarta bg-[#8424BC] flex flex-col items-center justify-center min-h-screen">
+        <div className="text-xl text-center">
           <p className="text-[#FFFFFF] mb-2">
             <a href="https://logo.com/">
               Logo and Favicon created by Sean Dustin Verano

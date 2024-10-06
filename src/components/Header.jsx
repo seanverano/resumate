@@ -48,7 +48,7 @@ const Header = () => {
             <li className="mx-2">
               <button
                 onClick={buildResume}
-                className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300"
+                className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300"
               >
                 Get Started
               </button>

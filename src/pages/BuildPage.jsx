@@ -300,15 +300,15 @@ function BuildPage() {
   //includes two buttons (home and download pdf)
   //and form for user inputs
   return (
-    <div className="w-screen h-full bg-gray-light text-gray-dark font-sans bg-[#EBF5FF]">
+    <div className="w-screen h-full bg-gray-light text-gray-dark font-sans bg-[#E1C6ED]">
       <div className="flex p-3 print:p-0">
-        <form className="w-2/5 flex flex-col justify-evenly print:hidden bg-[#EBF5FF]">
+        <form className="w-2/5 flex flex-col justify-evenly print:hidden bg-[#E1C6ED]">
           <div className="flex flex-row items-center justify-center gap-4">
             <button
               onClick={goHome}
               className="text-base font-jakarta font-bold
             text-[#323232] bg-[#FFFFFF] rounded-lg px-4 py-2
-            hover:bg-transparent hover:text-[#7175FE] transition duration-300
+            hover:bg-transparent hover:text-[#8424BC] transition duration-300
             ml-2"
             >
               <svg
@@ -332,7 +332,7 @@ function BuildPage() {
                 <button
                   onClick={downloadPDF}
                   disabled={isDownloading}
-                  className="text-base font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300"
+                  className="text-base font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300"
                 >
                   <svg
                     className="w-5 inline-block"

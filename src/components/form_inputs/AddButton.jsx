@@ -16,7 +16,7 @@ const AddButton = ({
         Experience
       </h3>
       <button
-        className="w-4/5 rounded font-jakarta font-bold bg-[#7175FE] text-[#FFFFFF] hover:bg-transparent hover:text-[#7175FE] m-2 p-2 text-center"
+        className="w-4/5 rounded font-jakarta font-bold bg-[#8424BC] text-[#FFFFFF] hover:bg-transparent hover:text-[#8424BC] m-2 p-2 text-center"
         onClick={handleExpClick}
       >
         Add Experience
@@ -27,7 +27,7 @@ const AddButton = ({
         Projects
       </h3>
       <button
-        className="w-4/5 rounded font-jakarta font-bold bg-[#7175FE] text-[#FFFFFF] hover:bg-transparent hover:text-[#7175FE] m-2 p-2 text-center"
+        className="w-4/5 rounded font-jakarta font-bold bg-[#8424BC] text-[#FFFFFF] hover:bg-transparent hover:text-[#8424BC] m-2 p-2 text-center"
         onClick={handleProjectClick}
       >
         Add Project
@@ -37,7 +37,7 @@ const AddButton = ({
         Education
       </h3>
       <button
-        className="w-4/5 rounded font-jakarta font-bold bg-[#7175FE] text-[#FFFFFF] hover:bg-transparent hover:text-[#7175FE] m-2 p-2 text-center"
+        className="w-4/5 rounded font-jakarta font-bold bg-[#8424BC] text-[#FFFFFF] hover:bg-transparent hover:text-[#8424BC] m-2 p-2 text-center"
         onClick={handleEduClick}
       >
         Add Education

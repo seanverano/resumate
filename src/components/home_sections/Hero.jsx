@@ -12,23 +12,23 @@ const Hero = () => {
   return (
     <section className="flex items-center justify-between h-screen max-w-screen-lg mx-auto p-8 mt-4">
       <div className="flex-1">
-        <h1 className="text-center font-jakarta text-6xl font-bold mb-2">
+        <h1 className="text-center font-jakarta text-8xl font-bold mb-2">
           <span className="text-[#323232]">Résu</span>
-          <span className="text-[#7175FE]">mate</span>
+          <span className="text-[#8424BC]">mate</span>
         </h1>
-        <h2 className="text-center mx-2 font-noto text-[#323232] mb-4">
+        <h2 className="text-center text-xl mx-2 font-noto text-[#323232] mb-4">
           Your journey to a standout resume starts here.
         </h2>
-        <h2 className="text-center mx-2 font-noto italic text-[#8D9099] mb-4">
+        <h2 className="text-center text-lg mx-2 font-noto italic text-[#8D9099] mb-4">
           "Success is where preparation meets opportunity"
         </h2>
-        <h2 className="text-center font-noto italic text-[#8D9099] mb-4">
+        <h2 className="text-center text-lg font-noto italic text-[#8D9099] mb-4">
           — Zig Ziglar
         </h2>
         <div className="flex justify-center">
           <button
             onClick={buildResume}
-            className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300"
+            className="text-sm font-jakarta font-bold text-[#FFFFFF] bg-[#8424BC] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#8424BC] transition duration-300"
           >
             Get Started
           </button>
@@ -36,7 +36,7 @@ const Hero = () => {
             to="#feature-section"
             className="text-sm font-jakarta font-bold
             text-[#323232] bg-[#ECEEEE] rounded-lg px-4 py-2
-            hover:bg-transparent hover:text-[#7175FE] transition duration-300
+            hover:bg-transparent hover:text-[#8424BC] transition duration-300
             ml-2"
           >
             Learn More

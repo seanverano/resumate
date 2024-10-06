@@ -1,4 +1,5 @@
 import React from "react";
+import Duo from "./templates/Duo";
 import Unus from "./templates/Unus";
 
 // Resume (on the right side of the build page)
@@ -17,8 +18,8 @@ const Resume = ({
 }) => {
   return (
     <>
-      {/* FIRST TEMPLATE: Unus */}
       {type === "unus" ? (
+        /* FIRST TEMPLATE: Unus */
         <Unus
           profile={userData}
           experience={expData}
@@ -30,8 +31,20 @@ const Resume = ({
           headerColor={headerColor}
           headerTextColor={headerTextColor}
         />
-      ) : null}
-      {/* template 2 under development/wip */}
+      ) : (
+        /* SECOND TEMPLATE: Duo*/
+        <Duo
+          profile={userData}
+          experience={expData}
+          expCount={expCount}
+          education={eduData}
+          eduCount={eduCount}
+          project={projectData}
+          projectCount={projectCount}
+          headerColor={headerColor}
+          headerTextColor={headerTextColor}
+        />
+      )}
     </>
   );
 };

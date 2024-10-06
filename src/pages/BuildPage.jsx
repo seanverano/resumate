@@ -344,7 +344,7 @@ function BuildPage() {
             value={type}
           >
             <option value="unus">Unus</option>
-            <option value="duos">Duos</option>
+            <option value="duo">Duo</option>
           </select>
           <div className="w-4/5">
             <label

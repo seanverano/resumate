@@ -1,7 +1,7 @@
 import React from "react";
 
 //SECOND TEMPLATE: DUO
-const TwoColumn = ({
+const Duo = ({
   headerTextColor,
   headerColor,
   profile,
@@ -221,4 +221,4 @@ const TwoColumn = ({
   );
 };
 
-export default TwoColumn;
+export default Duo;

@@ -112,7 +112,7 @@ const Duo = ({
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>{" "}
-              {profile.location}
+              {profile.address}
             </div>
             <div className="text-sm pt-3 break-all">
               <svg

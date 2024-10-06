@@ -1,6 +1,6 @@
 import React from "react";
-import Duo from "./templates/Duo";
-import Unus from "./templates/Unus";
+import Duo from "./resume_templates/Duo";
+import Unus from "./resume_templates/Unus";
 
 // Resume (on the right side of the build page)
 //Live previews the data inputted in the form (left side)

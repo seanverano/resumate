@@ -43,14 +43,11 @@ const PDFDownloader = ({ children }) => {
           const imgWidth = canvas.width;
           const imgHeight = canvas.height;
 
-          // Calculate the ratio to maintain aspect ratio
           const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
 
-          // Set image dimensions for the PDF
-          const imgX = 0; // Start from the left edge
-          const imgY = 0; // Start from the top edge
+          const imgX = 0;
+          const imgY = 0;
 
-          // Add image to PDF with the calculated dimensions
           pdf.addImage(
             imgData,
             "JPEG",
@@ -60,7 +57,6 @@ const PDFDownloader = ({ children }) => {
             imgHeight * ratio
           );
 
-          // Save the PDF
           pdf.save("Your Resume by Résumate.pdf");
           dispatch({ type: "DOWNLOAD_SUCCESS" });
         })

@@ -313,8 +313,10 @@ function BuildPage() {
     <div className="w-screen h-full bg-gray-light text-gray-dark font-sans bg-[#E1C6ED]">
       <div className="flex p-3 print:p-0">
         <form className="w-2/5 flex flex-col justify-evenly print:hidden bg-[#E1C6ED]">
+          {/* template selection */}
           <TemplateSelect handleChange={handleChange} type={type} />
           <div className="w-4/5">
+            {/* header color selection */}
             <label
               className="font-jakarta font-bold m-2 text-xl block text-[#323232]"
               htmlFor="headerColor"
@@ -330,6 +332,7 @@ function BuildPage() {
               value={headerColor}
             />
           </div>
+          {/* header text color selection */}
           <div className="w-4/5">
             <label
               className="font-jakarta font-bold m-2 text-xl block text-[#323232]"
@@ -372,6 +375,7 @@ function BuildPage() {
             headerColor={headerColor}
             headerTextColor={headerTextColor}
           />
+          {/* Button to navigate back to home and download the resume as PDF */}
           <div className="flex flex-row items-center justify-center gap-4 mt-5">
             <button
               onClick={goHome}

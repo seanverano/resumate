@@ -10,6 +10,7 @@ import Preloader from "../components/Preloader";
 import MobileWarning from "../components/MobileWarning";
 
 function HomePage() {
+  //for preloader
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

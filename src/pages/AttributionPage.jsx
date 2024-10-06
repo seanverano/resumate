@@ -45,10 +45,10 @@ function AttributionPage() {
           </p>
           <p className="text-[#FFFFFF] mb-2">
             <a
-              href="https://www.flaticon.com/free-icons/due-date"
-              title="due date icons"
+              href="https://www.flaticon.com/free-icons/navigation"
+              title="navigation icons"
             >
-              Feature 4 Icon created by Moudesain - Flaticon
+              Feature 4 Icon created by Freepik - Flaticon
             </a>
           </p>
           <p className="text-[#FFFFFF] mb-6">

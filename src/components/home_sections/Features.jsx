@@ -4,14 +4,18 @@ import React from "react";
 import FeatImgOne from "../../assets/feature-one.png";
 import FeatImgTwo from "../../assets/feature-two.png";
 import FeatImgThree from "../../assets/feature-three.png";
-import FeatImgFour from "../../assets/coming-soon.png";
+import FeatImgFour from "../../assets/feature-four.png";
 
 const Features = () => {
   const features = [
     {
+      title: "Smooth Navigation",
+      description: "Enjoy seamless navigation for a smooth user experience.",
+      image: FeatImgFour,
+    },
+    {
       title: "Streamlined Templates",
-      description:
-        "User-friendly templates for your effortless resume creation.",
+      description: "Intuitive templates for your effortless resume creation.",
       image: FeatImgOne,
     },
     {
@@ -23,11 +27,6 @@ const Features = () => {
       title: "PDF Ready",
       description: "Easily download your resume in PDF format.",
       image: FeatImgThree,
-    },
-    {
-      title: "Feature 4 (Coming Soon)",
-      description: "Stay tuned for exciting new features!",
-      image: FeatImgFour,
     },
   ];
 

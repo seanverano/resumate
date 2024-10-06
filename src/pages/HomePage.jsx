@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
-import Hero from "../components/sections/Hero";
-import Features from "../components/sections/Features";
-import Templates from "../components/sections/Templates";
+import Hero from "../components/home_sections/Hero";
+import Features from "../components/home_sections/Features";
+import Templates from "../components/home_sections/Templates";
 import Footer from "../components/Footer";
 
 function HomePage() {

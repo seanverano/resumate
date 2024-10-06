@@ -51,7 +51,8 @@ function AttributionPage() {
           </p>
           <p className="text-[#FFFFFF] mb-6">
             <a href="http://www.w3.org/2000/svg" title="due date icons">
-              Phone, Email, Location, Arrows, and Download symbols from W3C
+              Phone, Email, Location, Link, Arrows, and Download symbols from
+              W3C
             </a>
           </p>
         </div>

@@ -12,7 +12,7 @@
   max-width: 100%;
   border: 0.5rem solid #8424bc;
   border-radius: 0.5rem;
-  background-color: #e1c6ed;
+  background-color: #ffffff;
   position: relative;
   margin: 1rem;
   overflow: hidden;
@@ -40,6 +40,6 @@
 
 .title {
   font-size: 2rem;
-  color: var(--main-color);
+  color: #000000;
   margin-bottom: 1rem;
 }

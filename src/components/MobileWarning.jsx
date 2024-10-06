@@ -33,7 +33,7 @@ const MobileWarning = () => {
       style={{ zIndex: 9999 }}
       className="fixed top-0 left-0 w-full h-full bg-[#e1c6ed] bg-opacity-100 flex items-center justify-center"
     >
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-xs text-center">
+      <div className="fixed bg-[#ffffff] p-6 rounded-lg shadow-lg max-w-xs text-center">
         <h2 className="text-2xl font-jakarta font-bold text-[#8424BC] mb-4">
           Oops, a little notice!
         </h2>

@@ -1,0 +1,45 @@
+.preloader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.marker-loader {
+  height: 4rem;
+  width: 20rem;
+  max-width: 100%;
+  border: 0.5rem solid #8424bc;
+  border-radius: 0.5rem;
+  background-color: #e1c6ed;
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.marker-loader::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #8424bc;
+  animation: move-marker 2s infinite ease-in-out;
+  transform-origin: left;
+  border-radius: 0.5rem;
+}
+
+@keyframes move-marker {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}

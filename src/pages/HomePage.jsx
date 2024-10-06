@@ -1,3 +1,5 @@
+//homepage/landing page/about page
+
 import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/home_sections/Hero";

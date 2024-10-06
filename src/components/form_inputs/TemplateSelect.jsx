@@ -1,3 +1,5 @@
+//using select (form element) user can choose between the two templates
+
 import React from "react";
 
 const TemplateSelect = ({ handleChange, type }) => {

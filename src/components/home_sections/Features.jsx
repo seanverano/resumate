@@ -1,3 +1,5 @@
+//feature section in the homepage
+
 import React from "react";
 import FeatImgOne from "../../assets/feature-one.png";
 import FeatImgTwo from "../../assets/feature-two.png";

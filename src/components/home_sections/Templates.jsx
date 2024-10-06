@@ -1,3 +1,5 @@
+//template section in the homepage
+
 import React from "react";
 
 const Templates = () => {

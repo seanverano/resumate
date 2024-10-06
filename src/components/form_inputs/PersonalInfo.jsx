@@ -1,8 +1,10 @@
+//using input (form element) user can input their personal infos
+
 import React from "react";
 
 const PersonalInfo = ({ data, handleChange }) => {
   return (
-    <div>
+    <>
       <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl text-[#323232]">
         Personal Information
       </h3>
@@ -78,7 +80,7 @@ const PersonalInfo = ({ data, handleChange }) => {
         onChange={handleChange}
         placeholder="Link 3"
       />
-    </div>
+    </>
   );
 };
 

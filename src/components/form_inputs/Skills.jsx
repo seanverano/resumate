@@ -1,3 +1,5 @@
+////using input (form element) user can input their skills
+
 import React from "react";
 
 const Skills = ({ data, handleChange }) => {

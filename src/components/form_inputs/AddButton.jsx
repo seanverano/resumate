@@ -1,3 +1,5 @@
+//using button user can add new elements for experience, projects and education
+
 import React from "react";
 
 const AddButton = ({

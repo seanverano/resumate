@@ -1,3 +1,6 @@
+//this allows downloading the resume as a pdf using jsdpdf and html2canvas library
+//I also used useReducer for this instead of other hooks as I think it's a better choice
+
 import { useReducer, useCallback } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";

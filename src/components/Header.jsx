@@ -1,3 +1,5 @@
+//Home section header (navbar)
+
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";

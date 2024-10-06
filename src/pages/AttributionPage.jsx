@@ -1,3 +1,5 @@
+//Attribution page for citing references and resources
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 

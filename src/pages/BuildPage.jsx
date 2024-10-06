@@ -1,3 +1,5 @@
+//build page
+
 import React, { useState } from "react";
 import Resume from "../components/Resume";
 import { useNavigate } from "react-router-dom";
@@ -240,6 +242,8 @@ function BuildPage() {
     setEduCount(i);
   };
 
+  //handles the updating of state based on user inputs
+  //this manage forms dynamically for smooth and responsive user experience
   const handleChange = (e) => {
     const userData = { ...data };
     const expData = { ...experience };
@@ -292,6 +296,9 @@ function BuildPage() {
     setProject(projectData);
   };
 
+  //left side of the build page
+  //includes two buttons (home and download pdf)
+  //and form for user inputs
   return (
     <div className="w-screen h-full bg-gray-light text-gray-dark font-sans bg-[#EBF5FF]">
       <div className="flex p-3 print:p-0">
@@ -390,6 +397,8 @@ function BuildPage() {
             eduTemplate={eduTemplate}
           />
         </form>
+
+        {/*this displays the resume data from the component into live preview */}
         <div className="w-3/5">
           <Resume
             userData={data}

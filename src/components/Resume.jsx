@@ -18,33 +18,35 @@ const Resume = ({
 }) => {
   return (
     <>
-      {type === "unus" ? (
-        /* FIRST TEMPLATE: Unus */
-        <Unus
-          profile={userData}
-          experience={expData}
-          expCount={expCount}
-          education={eduData}
-          eduCount={eduCount}
-          project={projectData}
-          projectCount={projectCount}
-          headerColor={headerColor}
-          headerTextColor={headerTextColor}
-        />
-      ) : (
-        /* SECOND TEMPLATE: Duo*/
-        <Duo
-          profile={userData}
-          experience={expData}
-          expCount={expCount}
-          education={eduData}
-          eduCount={eduCount}
-          project={projectData}
-          projectCount={projectCount}
-          headerColor={headerColor}
-          headerTextColor={headerTextColor}
-        />
-      )}
+      <div className="resume-container">
+        {type === "unus" ? (
+          /* FIRST TEMPLATE: Unus */
+          <Unus
+            profile={userData}
+            experience={expData}
+            expCount={expCount}
+            education={eduData}
+            eduCount={eduCount}
+            project={projectData}
+            projectCount={projectCount}
+            headerColor={headerColor}
+            headerTextColor={headerTextColor}
+          />
+        ) : (
+          /* SECOND TEMPLATE: Duo*/
+          <Duo
+            profile={userData}
+            experience={expData}
+            expCount={expCount}
+            education={eduData}
+            eduCount={eduCount}
+            project={projectData}
+            projectCount={projectCount}
+            headerColor={headerColor}
+            headerTextColor={headerTextColor}
+          />
+        )}
+      </div>
     </>
   );
 };

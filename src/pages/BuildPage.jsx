@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Resume from "../components/Resume";
 import { useNavigate } from "react-router-dom";
+import PDFDownloader from "../components/PDFDownloader.jsx";
 
 function BuildPage() {
   const navigate = useNavigate();
@@ -315,23 +316,31 @@ function BuildPage() {
               </svg>{" "}
               Home
             </button>
-            <button className="text-base font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300">
-              <svg
-                className="w-5 inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                />
-              </svg>{" "}
-              Download PDF
-            </button>
+            <PDFDownloader>
+              {({ downloadPDF, isDownloading, error }) => (
+                <button
+                  onClick={downloadPDF}
+                  disabled={isDownloading}
+                  className="text-base font-jakarta font-bold text-[#FFFFFF] bg-[#7175FE] rounded-lg px-4 py-2 hover:bg-transparent hover:text-[#7175FE] transition duration-300"
+                >
+                  <svg
+                    className="w-5 inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>{" "}
+                  {isDownloading ? "Downloading..." : "Download PDF"}
+                </button>
+              )}
+            </PDFDownloader>
           </div>
           <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl block text-[#323232]">
             Template

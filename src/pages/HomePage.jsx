@@ -7,6 +7,7 @@ import Features from "../components/home_sections/Features";
 import Templates from "../components/home_sections/Templates";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
+import MobileWarning from "../components/MobileWarning";
 
 function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ function HomePage() {
 
   return (
     <>
+      <MobileWarning />
       {loading ? (
         <Preloader />
       ) : (

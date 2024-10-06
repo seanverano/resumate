@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import PDFDownloader from "../components/PDFDownloader.jsx";
 import PersonalInfo from "../components/form_inputs/PersonalInfo.jsx";
 import Skills from "../components/form_inputs/Skills.jsx";
-import AddButton from "../components/form_inputs/Experience.jsx";
+import AddButton from "../components/form_inputs/AddButton.jsx";
 
 function BuildPage() {
   const navigate = useNavigate();

@@ -1,6 +1,3 @@
-//this allows downloading the resume as a pdf using jsdpdf and html2canvas library
-//I also used useReducer for this instead of other hooks as I think it's a better choice
-
 import { useReducer, useCallback } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
@@ -34,18 +31,26 @@ const PDFDownloader = ({ children }) => {
       html2canvas(resumeElement, {
         scale: 2,
         useCORS: true,
+        logging: false,
+        letterRendering: true,
+        allowTaint: true,
       })
         .then((canvas) => {
           const imgData = canvas.toDataURL("image/jpeg", 1.0);
-          const pdf = new jsPDF("p", "mm", "a4");
+          const pdf = new jsPDF("p", "mm", "letter");
           const pdfWidth = pdf.internal.pageSize.getWidth();
           const pdfHeight = pdf.internal.pageSize.getHeight();
           const imgWidth = canvas.width;
           const imgHeight = canvas.height;
-          const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
-          const imgX = (pdfWidth - imgWidth * ratio) / 2;
-          const imgY = 30;
 
+          // Calculate the ratio to maintain aspect ratio
+          const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+
+          // Set image dimensions for the PDF
+          const imgX = 0; // Start from the left edge
+          const imgY = 0; // Start from the top edge
+
+          // Add image to PDF with the calculated dimensions
           pdf.addImage(
             imgData,
             "JPEG",
@@ -54,6 +59,8 @@ const PDFDownloader = ({ children }) => {
             imgWidth * ratio,
             imgHeight * ratio
           );
+
+          // Save the PDF
           pdf.save("Your Resume by Résumate.pdf");
           dispatch({ type: "DOWNLOAD_SUCCESS" });
         })

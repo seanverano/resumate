@@ -19,7 +19,7 @@ const Resume = ({
 }) => {
   return (
     <>
-      <div className="resume-container">
+      <div className="resume-container m-0 p-0 w-[8.5in] h-[11in]">
         {type === "unus" ? (
           /* FIRST TEMPLATE: Unus */
           <Unus

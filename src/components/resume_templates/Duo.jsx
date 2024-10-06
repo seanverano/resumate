@@ -39,7 +39,9 @@ const Duo = ({
       <div className="flex h-5/6 font-sans">
         <div className="bg-gray-100 w-1/4 mt-0.5">
           <section className="flex flex-col divide-y divide-black w-full mb-5 px-5 pt-3">
-            <div className="text-md text-black tracking-widest">SKILLS</div>
+            <div className="text-md text-black tracking-widest font-bold">
+              SKILLS
+            </div>
             <div>
               {profile.skills == null
                 ? ""
@@ -54,7 +56,7 @@ const Duo = ({
             </div>
           </section>
           <div className="flex flex-col px-5">
-            <div className="text-md text-black border-b border-black tracking-widest">
+            <div className="text-md text-black border-b border-black tracking-widest font-bold">
               CONTACT
             </div>
             <div className="text-sm pt-3 break-all">
@@ -141,18 +143,8 @@ const Duo = ({
           </div>
         </div>
         <div className="w-3/4">
-          <section className="flex flex-col text-white w-full mb-5 px-5">
-            <div className="text-md text-black pt-3 border-b border-black tracking-widest">
-              SUMMARY
-            </div>
-            {!profile.summary || 0 === profile.summary.length ? (
-              ""
-            ) : (
-              <div className="text-sm pt-3 text-black">{profile.summary}</div>
-            )}
-          </section>
-          <section className="flex flex-col text-black w-full mb-5 px-5">
-            <div className="text-md text-black border-b border-black tracking-widest">
+          <section className="flex flex-col text-black w-full mt-4 mb-5 px-5">
+            <div className="text-md text-black border-b border-black tracking-widest font-bold">
               PROFESSIONAL EXPERIENCE
             </div>
             {[...Array(expCount)].map((e, i) => (
@@ -162,10 +154,10 @@ const Duo = ({
                     <li>{experience.jobTitles[`jobTitle${i + 1}`]}</li>
                   </div>
                   <div>
-                    <div className="inline-block text-sm pt-3 text-black">
+                    <div className="inline-block text-sm pt-3 text-black italic">
                       {experience.jobStartDate[`jobStartDate${i + 1}`]} -
                     </div>
-                    <div className="inline-block text-sm pt-3 pl-3 text-black">
+                    <div className="inline-block text-sm pt-3 pl-3 text-black italic">
                       {experience.jobEndDate[`jobEndDate${i + 1}`] === undefined
                         ? "Present"
                         : experience.jobEndDate[`jobEndDate${i + 1}`]}
@@ -182,7 +174,7 @@ const Duo = ({
             ))}
           </section>
           <section className="flex flex-col text-black w-full mb-5 px-5">
-            <div className="text-md text-black border-b border-black tracking-widest">
+            <div className="text-md text-black border-b border-black tracking-widest font-bold">
               PROJECTS
             </div>
             {[...Array(projectCount)].map((e, i) => (
@@ -192,10 +184,10 @@ const Duo = ({
                     <li>{project.projectTitles[`projectTitle${i + 1}`]}</li>
                   </div>
                   <div>
-                    <div className="inline-block text-sm pt-3 text-black">
+                    <div className="inline-block text-sm pt-3 text-black italic">
                       {project.projectStartDate[`projectStartDate${i + 1}`]} -
                     </div>
-                    <div className="inline-block text-sm pt-3 pl-3 text-black">
+                    <div className="inline-block text-sm pt-3 pl-3 text-black italic">
                       {project.projectEndDate[`projectEndDate${i + 1}`] ===
                       undefined
                         ? "Present"
@@ -210,7 +202,7 @@ const Duo = ({
             ))}
           </section>
           <section className="flex flex-col text-black w-full mb-5 px-5">
-            <div className="text-md text-black border-b border-black tracking-widest">
+            <div className="text-md text-black border-b border-black tracking-widest font-bold">
               EDUCATION
             </div>
             {[...Array(eduCount)].map((e, i) => (
@@ -220,10 +212,10 @@ const Duo = ({
                     <li>{education.qual[`qual${i + 1}`]}</li>
                   </div>
                   <div>
-                    <div className="inline-block text-sm pt-3 text-black">
+                    <div className="inline-block text-sm pt-3 text-black italic">
                       {education.eduStartDate[`eduStartDate${i + 1}`]} -
                     </div>
-                    <div className="inline-block text-sm pt-3 pl-3 text-black">
+                    <div className="inline-block text-sm pt-3 pl-3 text-black italic">
                       {education.eduEndDate[`eduEndDate${i + 1}`] === undefined
                         ? "Present"
                         : education.eduEndDate[`eduEndDate${i + 1}`]}

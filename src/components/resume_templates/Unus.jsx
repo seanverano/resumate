@@ -51,7 +51,7 @@ const Unus = ({
         </div>
       </header>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
+        <div className="text-md text-gray-dark border-b border-black tracking-widest">
           SKILLS
         </div>
         <div>
@@ -59,7 +59,7 @@ const Unus = ({
             ? ""
             : profile.skills.split(",").map((skill) => (
                 <div
-                  className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm"
+                  className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm font-normal"
                   key={skill}
                 >
                   {skill}
@@ -68,7 +68,7 @@ const Unus = ({
         </div>
       </section>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
+        <div className="text-md text-gray-dark border-b border-black tracking-widest">
           EXPERIENCE
         </div>
         {[...Array(expCount)].map((e, i) => (
@@ -78,10 +78,10 @@ const Unus = ({
                 <li>{experience.jobTitles[`jobTitle${i + 1}`]}</li>
               </div>
               <div>
-                <div className="inline-block text-sm pt-3 text-gray-dark">
+                <div className="inline-block text-sm pt-3 text-gray-dark font-normal italic">
                   {experience.jobStartDate[`jobStartDate${i + 1}`]} -
                 </div>
-                <div className="inline-block text-sm pt-3 pl-3 text-gray-dark">
+                <div className="inline-block text-sm pt-3 pl-3 text-gray-dark font-normal italic">
                   {experience.jobEndDate[`jobEndDate${i + 1}`] === undefined
                     ? "Present"
                     : experience.jobEndDate[`jobEndDate${i + 1}`]}
@@ -91,14 +91,14 @@ const Unus = ({
             <div className="text-sm pt-3 text-gray-dark">
               {experience.exp[`exp${i + 1}`]}
             </div>
-            <div className="text-sm pt-3 text-gray-dark">
+            <div className="text-sm pt-3 text-gray-dark font-normal">
               {experience.jobDesc[`jobDesc${i + 1}`]}
             </div>
           </div>
         ))}
       </section>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
+        <div className="text-md text-gray-dark border-b border-black tracking-widest">
           PROJECTS
         </div>
         {[...Array(projectCount)].map((e, i) => (
@@ -108,10 +108,10 @@ const Unus = ({
                 <li>{project.projectTitles[`projectTitle${i + 1}`]}</li>
               </div>
               <div>
-                <div className="inline-block text-sm pt-3 text-gray-dark">
+                <div className="inline-block text-sm pt-3 text-gray-dark font-normal italic">
                   {project.projectStartDate[`projectStartDate${i + 1}`]} -
                 </div>
-                <div className="inline-block text-sm pt-3 pl-3 text-gray-dark">
+                <div className="inline-block text-sm pt-3 pl-3 text-gray-dark font-normal italic">
                   {project.projectEndDate[`projectEndDate${i + 1}`] ===
                   undefined
                     ? "Present"
@@ -119,14 +119,14 @@ const Unus = ({
                 </div>
               </div>
             </div>
-            <div className="text-sm pt-3 text-gray-dark">
+            <div className="text-sm pt-3 text-gray-dark font-normal">
               {project.projectDesc[`projectDesc${i + 1}`]}
             </div>
           </div>
         ))}
       </section>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-gray-dark tracking-widest">
+        <div className="text-md text-gray-dark border-b border-black tracking-widest">
           EDUCATION
         </div>
         {[...Array(eduCount)].map((e, i) => (
@@ -136,10 +136,10 @@ const Unus = ({
                 <li>{education.qual[`qual${i + 1}`]}</li>
               </div>
               <div>
-                <div className="inline-block text-sm pt-3 text-gray-dark">
+                <div className="inline-block text-sm pt-3 text-gray-dark font-normal italic">
                   {education.eduStartDate[`eduStartDate${i + 1}`]} -
                 </div>
-                <div className="inline-block text-sm pt-3 pl-3 text-gray-dark">
+                <div className="inline-block text-sm pt-3 pl-3 text-gray-dark font-normal italic">
                   {education.eduEndDate[`eduEndDate${i + 1}`] === undefined
                     ? "Present"
                     : education.eduEndDate[`eduEndDate${i + 1}`]}
@@ -149,7 +149,7 @@ const Unus = ({
             <div className="text-sm pt-3 text-gray-dark">
               {education.edu[`educ${i + 1}`]}
             </div>
-            <div className="text-sm pt-3 text-gray-dark">
+            <div className="text-sm pt-3 text-gray-dark font-normal">
               {education.eduDesc[`eduDesc${i + 1}`]}
             </div>
           </div>

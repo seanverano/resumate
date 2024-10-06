@@ -11,7 +11,7 @@ function HomePage() {
   return (
     <>
       <div className="flex flex-col bg-[#FFFFFF]">
-        <Header />
+        <Header className="animate__animated animate__fadeIn animate__duration-4000 animate__delay-6s" />
         <div>
           <section id="home-section">
             <Hero />

@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-4 z-50 w-full">
-      <nav className="bg-[#ECEEEE] bg-opacity-50 backdrop-filter backdrop-blur-lg saturate-180 rounded-full shadow-lg mx-auto w-[90%]">
+      <nav className="bg-[#ECEEEE] bg-opacity-50 backdrop-filter backdrop-blur-lg saturate-180 rounded-full shadow-lg mx-auto w-[90%] z-10">
         {" "}
         <div className="flex items-center justify-between px-9 py-4">
           <div className="flex items-center">

@@ -1,9 +1,17 @@
 //template section in the homepage
 import UnusPreview from "../../assets/unus-preview.jpg";
 import DuoPreview from "../../assets/duo-preview.jpg";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Templates = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
   const templates = [
     {
       title: "Unus",
@@ -22,7 +30,10 @@ const Templates = () => {
   return (
     <section className="py-16 bg-[#ffffff]">
       <div className="container mx-auto px-4">
-        <h2 className="font-jakarta text-[#8424BC] text-3xl font-bold text-center mb-8">
+        <h2
+          className="font-jakarta text-[#8424BC] text-3xl font-bold text-center mb-8"
+          data-aos="fade-up"
+        >
           Templates Designed to Elevate Your Resume
         </h2>
         <div className="flex flex-col md:flex-row justify-between items-stretch">
@@ -30,6 +41,8 @@ const Templates = () => {
             <div
               key={index}
               className="flex-1 md:mx-4 mb-8 md:mb-0 flex flex-col"
+              data-aos="flip-left"
+              data-aos-delay="1000"
             >
               <img
                 src={template.image}

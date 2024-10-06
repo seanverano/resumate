@@ -1,6 +1,8 @@
 //build page
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Resume from "../components/Resume";
 import { useNavigate } from "react-router-dom";
 import PDFDownloader from "../components/PDFDownloader.jsx";
@@ -10,8 +12,16 @@ import Skills from "../components/form_inputs/Skills.jsx";
 import AddButton from "../components/form_inputs/AddButton.jsx";
 
 function BuildPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
+
   const navigate = useNavigate();
   const goHome = () => navigate("/");
+
   // PROFILE/USER INFO/PERSONAL DETAILS
   const [data, setData] = useState({
     name: "",
@@ -349,7 +359,7 @@ function BuildPage() {
         </form>
 
         {/*this displays the resume data from the component into live preview */}
-        <div className="w-3/5">
+        <div className="w-3/5" data-aos="zoom-in">
           <Resume
             userData={data}
             expData={experience}

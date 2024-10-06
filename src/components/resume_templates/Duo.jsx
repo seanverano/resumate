@@ -32,22 +32,23 @@ const Duo = ({
           style={{ backgroundColor: `${headerColor}` }}
           className="flex flex-col items-start justify-center px-5 h-5/6 w-full"
         >
-          <div className="text-3xl">{profile.name}</div>
+          <div className="text-4xl font-bold">{profile.name}</div>
           <div className="text-lg pt-3">{profile.wantedJobTitle}</div>
         </div>
       </header>
       <div className="flex h-5/6 font-sans">
         <div className="bg-gray-100 w-1/4 mt-0.5">
           <section className="flex flex-col divide-y divide-black w-full mb-5 px-5 pt-3">
-            <div className="text-md text-black tracking-widest font-bold">
+            <div className="text-md text-black tracking-widest font-bold mb-2">
               SKILLS
             </div>
+            <div className="border-b border-black"></div>
             <div>
               {profile.skills == null
                 ? ""
                 : profile.skills.split(",").map((skill) => (
                     <div
-                      className="inline-block px-1 mt-3 mx-1 bg-black text-sm text-white"
+                      className="inline-block px-2 py-2 mt-3 mx-1 text-center bg-black text-sm text-white items-center justify-center"
                       key={skill}
                     >
                       {skill}
@@ -56,9 +57,10 @@ const Duo = ({
             </div>
           </section>
           <div className="flex flex-col px-5">
-            <div className="text-md text-black border-b border-black tracking-widest font-bold">
+            <div className="text-md text-black tracking-widest font-bold mb-2">
               CONTACT
             </div>
+            <div className="border-b border-black"></div>
             <div className="text-sm pt-3 break-all">
               <svg
                 className="w-5 inline-block"
@@ -143,10 +145,11 @@ const Duo = ({
           </div>
         </div>
         <div className="w-3/4">
-          <section className="flex flex-col text-black w-full mt-4 mb-5 px-5">
-            <div className="text-md text-black border-b border-black tracking-widest font-bold">
+          <section className="flex flex-col text-black w-full mb-5 px-5">
+            <div className="text-md text-black tracking-widest font-bold mt-5 mb-2">
               PROFESSIONAL EXPERIENCE
             </div>
+            <div className="border-b border-black"></div>
             {[...Array(expCount)].map((e, i) => (
               <div className="flex flex-col" key={`exp${i}`}>
                 <div className="flex justify-between">
@@ -174,9 +177,10 @@ const Duo = ({
             ))}
           </section>
           <section className="flex flex-col text-black w-full mb-5 px-5">
-            <div className="text-md text-black border-b border-black tracking-widest font-bold">
+            <div className="text-md text-black tracking-widest font-bold mb-2">
               PROJECTS
             </div>
+            <div className="border-b border-black"></div>
             {[...Array(projectCount)].map((e, i) => (
               <div className="flex flex-col" key={`exp${i}`}>
                 <div className="flex justify-between">
@@ -202,9 +206,10 @@ const Duo = ({
             ))}
           </section>
           <section className="flex flex-col text-black w-full mb-5 px-5">
-            <div className="text-md text-black border-b border-black tracking-widest font-bold">
+            <div className="text-md text-black tracking-widest font-bold mb-2">
               EDUCATION
             </div>
+            <div className="border-b border-black"></div>
             {[...Array(eduCount)].map((e, i) => (
               <div className="flex flex-col" key={`exp${i}`}>
                 <div className="flex justify-between">

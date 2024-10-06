@@ -51,15 +51,16 @@ const Unus = ({
         </div>
       </header>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-black tracking-widest">
+        <div className="text-md text-gray-dark tracking-widest mb-2">
           SKILLS
         </div>
+        <div className="border-b border-black"></div>
         <div>
           {profile.skills == null
             ? ""
             : profile.skills.split(",").map((skill) => (
                 <div
-                  className="inline-block px-1 mt-3 mx-1 bg-gray-dark text-sm font-normal"
+                  className="inline-block px-1 mx-4 mt-3 bg-gray-dark text-sm font-normal"
                   key={skill}
                 >
                   {skill}
@@ -68,11 +69,12 @@ const Unus = ({
         </div>
       </section>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-black tracking-widest">
+        <div className="text-md text-gray-dark tracking-widest mb-2">
           EXPERIENCE
         </div>
+        <div className="border-b border-black"></div>
         {[...Array(expCount)].map((e, i) => (
-          <div className="flex flex-col" key={`exp${i}`}>
+          <div className="flex flex-col mx-4" key={`exp${i}`}>
             <div className="flex justify-between">
               <div className="text-sm pt-3 text-gray-dark">
                 <li>{experience.jobTitles[`jobTitle${i + 1}`]}</li>
@@ -98,11 +100,12 @@ const Unus = ({
         ))}
       </section>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-black tracking-widest">
+        <div className="text-md text-gray-dark tracking-widest mb-2">
           PROJECTS
         </div>
+        <div className="border-b border-black"></div>
         {[...Array(projectCount)].map((e, i) => (
-          <div className="flex flex-col" key={`exp${i}`}>
+          <div className="flex flex-col mx-4" key={`exp${i}`}>
             <div className="flex justify-between">
               <div className="text-sm pt-3 text-gray-dark">
                 <li>{project.projectTitles[`projectTitle${i + 1}`]}</li>
@@ -126,11 +129,12 @@ const Unus = ({
         ))}
       </section>
       <section className="flex flex-col font-bold w-full mb-5 px-5">
-        <div className="text-md text-gray-dark border-b border-black tracking-widest">
+        <div className="text-md text-gray-dark tracking-widest mb-2">
           EDUCATION
         </div>
+        <div className="border-b border-black"></div>
         {[...Array(eduCount)].map((e, i) => (
-          <div className="flex flex-col" key={`exp${i}`}>
+          <div className="flex flex-col mx-4" key={`exp${i}`}>
             <div className="flex justify-between">
               <div className="text-sm pt-3 text-gray-dark">
                 <li>{education.qual[`qual${i + 1}`]}</li>

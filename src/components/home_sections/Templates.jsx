@@ -1,5 +1,6 @@
 //template section in the homepage
-
+import UnusPreview from "../../assets/unus-preview.jpg";
+import DuoPreview from "../../assets/duo-preview.jpg";
 import React from "react";
 
 const Templates = () => {
@@ -8,13 +9,13 @@ const Templates = () => {
       title: "Unus",
       description:
         "A sleek, minimalist design inspired by Harvard's popular resume template.",
-      image: "https://via.placeholder.com/150x200",
+      image: UnusPreview,
     },
     {
       title: "Duo",
       description:
         "Two-column layout with contact info and skills on the left for a clean, organized look.",
-      image: "https://via.placeholder.com/150x200",
+      image: DuoPreview,
     },
   ];
 
@@ -33,7 +34,7 @@ const Templates = () => {
               <img
                 src={template.image}
                 alt={template.title}
-                className="w-full h-auto mb-4 rounded"
+                className="w-full h-auto mb-4 rounded transition-transform transform hover:scale-105 shadow-lg box-border bg-white"
               />
               <h3 className="font-jakarta text-xl text-[#323232] font-semibold mb-2 text-center">
                 {template.title}

@@ -12,7 +12,7 @@ const Hero = () => {
   const buildResume = () => navigate("/build-resume");
   return (
     <section className="p-0 mx-2 flex items-center justify-between h-screen mt-4">
-      <div className="flex-1 animate__animated animate__fadeInUp animate__duration-2000 animate__delay-1s">
+      <div className="flex-1 animate__animated animate__slideInLeft animate__duration-2000 animate__delay-1s">
         <h1 className="text-center font-jakarta text-8xl font-bold mb-2">
           <span className="text-[#323232]">Résu</span>
           <span className="text-[#8424BC]">mate</span>
@@ -49,7 +49,7 @@ const Hero = () => {
         <img
           src={HeroImage}
           alt="Hero Decoration"
-          className="w-full h-auto animate__animated animate__fadeIn animate__duration-3000 animate__delay-2s"
+          className="w-full h-auto animate__animated animate__slideInRight animate__duration-2000 animate__delay-1s"
         />
       </div>
     </section>

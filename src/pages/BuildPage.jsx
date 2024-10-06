@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Resume from "../components/Resume";
 import { useNavigate } from "react-router-dom";
 import PDFDownloader from "../components/PDFDownloader.jsx";
+import TemplateSelect from "../components/form_inputs/TemplateSelect.jsx";
 import PersonalInfo from "../components/form_inputs/PersonalInfo.jsx";
 import Skills from "../components/form_inputs/Skills.jsx";
 import AddButton from "../components/form_inputs/AddButton.jsx";
@@ -345,19 +346,7 @@ function BuildPage() {
               )}
             </PDFDownloader>
           </div>
-          <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl block text-[#323232]">
-            Template
-          </h3>
-          <select
-            className="w-4/5 p-2 m-2 rounded font-noto "
-            name="templates"
-            id="templates"
-            onChange={handleChange}
-            value={type}
-          >
-            <option value="unus">Unus</option>
-            <option value="duo">Duo</option>
-          </select>
+          <TemplateSelect handleChange={handleChange} type={type} />
           <div className="w-4/5">
             <label
               className="font-jakarta font-bold m-2 text-xl block text-[#323232]"

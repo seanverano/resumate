@@ -3,6 +3,8 @@ import Resume from "../components/Resume";
 import { useNavigate } from "react-router-dom";
 import PDFDownloader from "../components/PDFDownloader.jsx";
 import PersonalInfo from "../components/form_inputs/PersonalInfo.jsx";
+import Skills from "../components/form_inputs/Skills.jsx";
+import AddButton from "../components/form_inputs/Experience.jsx";
 
 function BuildPage() {
   const navigate = useNavigate();
@@ -389,48 +391,15 @@ function BuildPage() {
             />
           </div>
           <PersonalInfo data={data} handleChange={handleChange} />
-          <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl text-[#323232]">
-            Skills
-          </h3>
-          <input
-            className="w-4/5 p-2 m-2 rounded text-[#8D9099] font-noto"
-            type="text"
-            id="skills"
-            name="skills"
-            value={data.skills}
-            onChange={handleChange}
-            placeholder="Skills"
+          <Skills data={data} handleChange={handleChange} />
+          <AddButton
+            handleExpClick={handleExpClick}
+            expTemplate={expTemplate}
+            handleProjectClick={handleProjectClick}
+            projectTemplate={projectTemplate}
+            handleEduClick={handleEduClick}
+            eduTemplate={eduTemplate}
           />
-          <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl text-[#323232]">
-            Experience
-          </h3>
-          <button
-            className="w-4/5 rounded font-jakarta font-bold bg-[#7175FE] text-[#FFFFFF] hover:bg-transparent hover:text-[#7175FE] m-2 p-2 text-center"
-            onClick={handleExpClick}
-          >
-            Add Experience
-          </button>
-          {expTemplate.map((el) => el)}
-          <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl text-[#323232]">
-            Projects
-          </h3>
-          <button
-            className="w-4/5 rounded font-jakarta font-bold bg-[#7175FE] text-[#FFFFFF] hover:bg-transparent hover:text-[#7175FE] m-2 p-2 text-center"
-            onClick={handleProjectClick}
-          >
-            Add Project
-          </button>
-          {projectTemplate.map((el) => el)}
-          <h3 className="font-jakarta font-bold w-4/5 m-2 text-xl text-[#323232]">
-            Education
-          </h3>
-          <button
-            className="w-4/5 rounded font-jakarta font-bold bg-[#7175FE] text-[#FFFFFF] hover:bg-transparent hover:text-[#7175FE] m-2 p-2 text-center"
-            onClick={handleEduClick}
-          >
-            Add Education
-          </button>
-          {eduTemplate.map((el) => el)}
         </form>
         <div className="w-3/5">
           <Resume

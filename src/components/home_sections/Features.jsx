@@ -40,7 +40,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-16 bg-[#ffffff]">
+    <section className="py-16 bg-[#ffffff] mt-6">
       <div className="container mx-auto px-4">
         <h2
           className="font-jakarta text-[#8424BC] text-3xl font-bold text-center mb-8 "

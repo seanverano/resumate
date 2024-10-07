@@ -33,6 +33,7 @@ const Templates = () => {
         <h2
           className="font-jakarta text-[#8424BC] text-3xl font-bold text-center mb-8"
           data-aos="fade-up"
+          data-aos-delay="1500"
         >
           Templates Designed to Elevate Your Resume
         </h2>
@@ -42,7 +43,7 @@ const Templates = () => {
               key={index}
               className="flex-1 md:mx-4 mb-8 md:mb-0 flex flex-col"
               data-aos="flip-left"
-              data-aos-delay="1000"
+              data-aos-delay="2000"
             >
               <img
                 src={template.image}

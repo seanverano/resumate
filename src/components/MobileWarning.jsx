@@ -34,14 +34,17 @@ const MobileWarning = () => {
       className="overflow-hidden fixed top-0 left-0 w-full h-full bg-[#e1c6ed] bg-opacity-100 flex items-center justify-center"
     >
       <div className="fixed bg-[#ffffff] p-6 rounded-lg shadow-lg max-w-xs text-center">
-        <h2 className="text-2xl font-jakarta font-bold text-[#8424BC] mb-4">
+        <h2 className="text-base font-jakarta font-bold text-[#8424BC] mb-4">
           Oops, a little notice!
         </h2>
-        <p className="font-noto text-lg text-[#000000] mb-4">
+        <p className="font-noto text-sm text-[#000000] mb-4">
           For a better experience, this site is optimized only for devices with
           a width of 1024px or more (desktop, laptop, and tablets).
         </p>
-        <p className="font-noto text-[#000000] mb-4 italic">
+        <p className="font-noto text-sm text-[#000000] mb-4">
+          If you are using one of the devices mentioned above and still see this message, try zooming out using your browser tools.
+        </p>
+        <p className="font-noto text-sm text-[#000000] mb-4 italic">
           Let’s be honest—nobody wants to craft their resume on a tiny screen,
           right?
         </p>
